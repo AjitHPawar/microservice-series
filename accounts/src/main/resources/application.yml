@@ -1,0 +1,21 @@
+server:
+  port: 8181
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/msseries
+    username: root
+    password: root
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
